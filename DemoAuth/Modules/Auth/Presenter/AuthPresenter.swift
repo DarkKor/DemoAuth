@@ -53,8 +53,6 @@ class AuthPresenter {
     }
     
     func authorized() {
-        print("done")
-        
         //  TODO: Demonstrate open Weather API
         WeatherAPI.shared.getWeather { [weak self] (json) in
             if let json = json {

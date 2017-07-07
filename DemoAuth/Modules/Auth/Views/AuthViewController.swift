@@ -92,8 +92,6 @@ extension AuthViewController: AuthViewProtocol {
     }
     
     func showWeatherMessage(_ weather: [String : Any]) {
-        print("\(weather)")
-        
         var message = ""
         if let main = weather["main"] as? [String : Any] {
             message += main.description + "\n"
