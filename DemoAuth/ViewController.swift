@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonAuthTouched(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyboard = UIStoryboard(name: "Auth", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "AuthViewControllerID")
         let authController = controller as! AuthViewController
         

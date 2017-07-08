@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		DC7660E11F0FD8B900F01122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7660E01F0FD8B900F01122 /* AppDelegate.swift */; };
 		DC7660E31F0FD8B900F01122 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7660E21F0FD8B900F01122 /* ViewController.swift */; };
-		DC7660E61F0FD8B900F01122 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7660E41F0FD8B900F01122 /* Main.storyboard */; };
+		DC7660E61F0FD8B900F01122 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7660E41F0FD8B900F01122 /* Auth.storyboard */; };
 		DC7660E81F0FD8B900F01122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC7660E71F0FD8B900F01122 /* Assets.xcassets */; };
 		DC7660EB1F0FD8B900F01122 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7660E91F0FD8B900F01122 /* LaunchScreen.storyboard */; };
 		DC7660F91F0FDD2300F01122 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7660F81F0FDD2300F01122 /* AuthViewController.swift */; };
@@ -76,7 +76,7 @@
 		DC7660DD1F0FD8B900F01122 /* DemoAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC7660E01F0FD8B900F01122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC7660E21F0FD8B900F01122 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DC7660E51F0FD8B900F01122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC7660E51F0FD8B900F01122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Auth.storyboard; sourceTree = "<group>"; };
 		DC7660E71F0FD8B900F01122 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC7660EA1F0FD8B900F01122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC7660EC1F0FD8B900F01122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -179,7 +179,7 @@
 				DC7660F31F0FDCC800F01122 /* Modules */,
 				DC7660E01F0FD8B900F01122 /* AppDelegate.swift */,
 				DC7660E21F0FD8B900F01122 /* ViewController.swift */,
-				DC7660E41F0FD8B900F01122 /* Main.storyboard */,
+				DC7660E41F0FD8B900F01122 /* Auth.storyboard */,
 				DC7660E71F0FD8B900F01122 /* Assets.xcassets */,
 				DC7660E91F0FD8B900F01122 /* LaunchScreen.storyboard */,
 				DC7660EC1F0FD8B900F01122 /* Info.plist */,
@@ -215,11 +215,11 @@
 		DC7660F51F0FDD0C00F01122 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				DC7661721F104BDA00F01122 /* WeatherAPI.swift */,
 				DC7660FC1F0FDD3F00F01122 /* AuthServiceProtocol.swift */,
 				DC76611E1F0FFC2C00F01122 /* AuthServiceResultProtocol.swift */,
 				DC7661461F10097700F01122 /* MockAuthService.swift */,
 				DC7661701F100B6800F01122 /* MockAuthServiceResult.swift */,
-				DC7661721F104BDA00F01122 /* WeatherAPI.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -397,7 +397,7 @@
 				DC7661361F10001D00F01122 /* Images.xcassets in Resources */,
 				DC7660E81F0FD8B900F01122 /* Assets.xcassets in Resources */,
 				DC7661371F10001D00F01122 /* Info.plist in Resources */,
-				DC7660E61F0FD8B900F01122 /* Main.storyboard in Resources */,
+				DC7660E61F0FD8B900F01122 /* Auth.storyboard in Resources */,
 				DC7661611F100A2F00F01122 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,12 +471,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DC7660E41F0FD8B900F01122 /* Main.storyboard */ = {
+		DC7660E41F0FD8B900F01122 /* Auth.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DC7660E51F0FD8B900F01122 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Auth.storyboard;
 			sourceTree = "<group>";
 		};
 		DC7660E91F0FD8B900F01122 /* LaunchScreen.storyboard */ = {
@@ -630,6 +630,7 @@
 				DC7660F11F0FD8B900F01122 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
