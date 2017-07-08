@@ -54,6 +54,7 @@ class AuthViewController: UIViewController {
     }
 }
 
+//  MARK: - AuthViewProtocol
 extension AuthViewController: AuthViewProtocol {
     func startLoading() {
         HUD.show(.progress)
